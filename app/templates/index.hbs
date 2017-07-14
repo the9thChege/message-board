@@ -1,11 +1,26 @@
-<center><h3><u>African talk</u></h3></center>
+<div class="questions-main">
+  <center><h3><u>African talk</u></h3></center>
 
-<ul>
-  {{#each model as |question|}}
-    {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
-  {{/each}}
-</ul>
+  <ul>
+    {{#each model.questions as |question|}}
+      {{question-tile question=question}}
+    {{/each}}
+  </ul>
 
-<center>{{new-question saveQuestion="saveQuestion"}}</center>
+  <center>{{new-question saveQuestion="saveQuestion"}}</center>
+  <br>
 
-{{#link-to 'about'}}About{{/link-to}}
+</div>
+
+<div class="answers-main">
+  <center><h4><u> All Answers </u></h4></center>
+
+  <ul>
+    {{#each model.answers as |answer|}}
+      <li>{{answer.response}} - by {{answer.author}}</li>
+    {{/each}}
+  </ul>
+
+  <hr>
+
+</div>

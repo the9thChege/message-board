@@ -1,5 +1,13 @@
+<h2>{{question.question}}:</h2>
+{{question.author}} asked:
+<br> "{{question.question}}"
+<br> From {{question.city}} in {{question.country}}.
 <br>
-<i>About {{question.author}}:</i>
-{{question.aboutMe}}
+<h2> Answers thus far... </h2>
+<ul>
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
+  {{/each}}
+</ul>
 <br>
 <button {{action 'delete' question}}>Delete</button>
