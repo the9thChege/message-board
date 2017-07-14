@@ -3,6 +3,7 @@
 <br> "{{question.question}}"
 <br> From {{question.city}} in {{question.country}}.
 <br>
+{{update-question question=question update="update"}}
 <h2> Answers thus far... </h2>
 <ul>
   {{#each question.answers as |answer|}}
