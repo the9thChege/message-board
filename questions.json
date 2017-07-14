@@ -1,0 +1,21 @@
+{
+  "questions": [{
+    "question": "What is the AU's 2030 vision for the continent?",
+    "author": "Suzie Makhobe",
+    "city": "Pretoria",
+    "country": "South Africa",
+    "aboutMe": "I'm a software engineer working with the South African government."
+  }, {
+    "question": "How is the situation in Togo as of July 11th 2017?",
+    "author": "Tolo Ogubele",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "aboutMe": "I'm a 33 year old Nigerian businessman who works with textile import."
+
+  }, {
+    "author": "Kilunda Kimbesa",
+    "city": "Machakos",
+    "country": "Kenya",
+    "question": "Where does Egypt stand on Somalian Pirates?"
+  }]
+}

@@ -1,0 +1,11 @@
+<center><h3><u>African talk</u></h3></center>
+
+<ul>
+  {{#each model as |question|}}
+    {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
+  {{/each}}
+</ul>
+
+<center>{{new-question saveQuestion="saveQuestion"}}</center>
+
+{{#link-to 'about'}}About{{/link-to}}

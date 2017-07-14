@@ -1,0 +1,6 @@
+<h2>{{model.question}}:</h2>
+{{model.author}} asked:
+<br> "{{model.question}}"
+<br> From {{model.city}} in {{model.country}}.
+<br> {{update-question question=question update="update"}}
+{{question-detail question=model destroyQuestion="destroyQuestion"}}
