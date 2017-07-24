@@ -1,27 +1,68 @@
 body {
-  background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
-  background-color: #282828;
-  background-size: 16px 16px;
-  color: lightblue;
+  background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #075A62), color-stop(0.65, #216C45));
+  background-image: -o-linear-gradient(bottom, #075A62 0%, #216C45 65%);
+  background-image: -moz-linear-gradient(bottom, #075A62 0%, #216C45 65%);
+  background-image: -webkit-linear-gradient(bottom, #075A62 0%, #216C45 65%);
+  background-image: -ms-linear-gradient(bottom, #075A62 0%, #216C45 65%);
+  background-image: linear-gradient(to bottom, #075A62 0%, #216C45 65%);
+  color: #ccba13;
 }
 
 .jumbotron {
-  background-color: #556;
-  background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
-  background-size: 80px 140px;
+  background-image: -webkit-gradient(
+  	linear,
+  	left top,
+  	left bottom,
+  	color-stop(0, #4FA814),
+  	color-stop(1, #241C0C)
+  );
+  background-image: -o-linear-gradient(bottom, #4FA814 0%, #241C0C 100%);
+  background-image: -moz-linear-gradient(bottom, #4FA814 0%, #241C0C 100%);
+  background-image: -webkit-linear-gradient(bottom, #4FA814 0%, #241C0C 100%);
+  background-image: -ms-linear-gradient(bottom, #4FA814 0%, #241C0C 100%);
+  background-image: linear-gradient(to bottom, #4FA814 0%, #241C0C 100%);
   background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
-  color: tan;
+  color: gold;
   text-align: center;
+  font-family: 'Metamorphous', cursive;
 }
 
-a{
-  color: lightblue;
+a {
+  color: #3345EC;
 }
 
-button{
+button {
   background-color: black;
 }
 
-.questions-main{
+.questions-main {
+  font-family: 'Arima Madurai', cursive;
   font-size: 20px;
+}
+
+.questions-main a {
+  color: #45cd52;
+}
+
+.questions-main a:hover {
+  color: #bad052;
+}
+
+form, .question-detail {
+  font-family: 'Lobster Two', cursive;
+  font-size: 20px;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.question-detail-answers{
+  text-align: center;
+}
+
+.question-detail-answers ul{
+  color: #32c199;
+}
+
+.question-detail-questions{
+  color: #df672c;
 }

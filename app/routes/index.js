@@ -17,15 +17,6 @@ export default Ember.Route.extend({
         alert("Thank you for submitting your question. Check back soon to see if an answer has been contributed.");
         this.transitionTo('index');
       }
-    },
-    saveAnswer(params) {
-      var newAnswer = this.store.createRecord('answer', params);
-      var question = params.question;
-      question.get('answers').addObject(newAnswer);
-      newAnswer.save().then(function() {
-        return question.save();
-      });
-      this.transitionTo('question', question);
     }
   }
 });

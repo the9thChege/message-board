@@ -1,14 +1,21 @@
-<h2>{{question.question}}:</h2>
-{{question.author}} asked:
-<br> "{{question.question}}"
-<br> From {{question.city}} in {{question.country}}.
-<br>
-{{update-question question=question update="update"}}
-<h2> Answers thus far... </h2>
-<ul>
-  {{#each question.answers as |answer|}}
-    {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
-  {{/each}}
-</ul>
-<br>
-<button {{action 'delete' question}}>Delete</button>
+<div class="question-detail">
+  <h2>{{question.question}}:</h2>
+  <div class="question-detail-questions">
+    {{question.author}} asked:
+    <br> "{{question.question}}"
+    <br> From {{question.city}} in {{question.country}}.
+    <br>
+    {{update-question question=question update="update"}}
+  </div>
+<div class="question-detail-answers">
+  <h2> Answers thus far... </h2>
+  <ul>
+    {{#each question.answers as |answer|}}
+      {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
+    {{/each}}
+  </ul>
+</div>
+  <br>
+  <button {{action 'delete' question}}>Delete</button>
+
+</div>
